@@ -40,7 +40,7 @@ export const ContadorRed = () => {
         Decrementar
       </button>
       <button
-        className="btn btn-outline-primary"
+        className="btn btn-outline-danger"
         onClick={() => dispatch({ type: "custom", payload: 100 })}
       >
         100

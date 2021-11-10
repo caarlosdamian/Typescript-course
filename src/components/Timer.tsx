@@ -6,7 +6,6 @@ type Timerargs = {
 export const Timer = ({ milisegundos }: Timerargs) => {
   const [segundos, setSegundos] = useState(0);
   const ref = useRef<NodeJS.Timeout>();
-  console.log(milisegundos);
   useEffect(() => {
     ref.current && clearInterval(ref.current);
     ref.current = setInterval(() => setSegundos((s) => s + 1), milisegundos);
